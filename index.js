@@ -1,6 +1,6 @@
 const io = require('socket.io')();
 const uuid = require('uuid');
-const port = 2000;
+const port = process.env.PORT || 3000;
 
 const maxPlayerCountPerRoom = 4;
 const connectedPlayers = {};
